@@ -1,5 +1,4 @@
 import { render, screen } from '@testing-library/react'
-
 import Main from '.'
 
 describe('<Main />', () => {
@@ -7,7 +6,7 @@ describe('<Main />', () => {
     const { container } = render(<Main />)
 
     expect(
-      screen.getByRole('heading', { name: /main test/i })
+      screen.getByRole('heading', { name: /boilerplate nextjs/i })
     ).toBeInTheDocument()
 
     expect(container.firstChild).toMatchSnapshot()

@@ -1,9 +1,5 @@
 const Main = () => {
-  return (
-    <div>
-      <h1>Main Test</h1>
-    </div>
-  )
+  return <h1>Boilerplate NextJS</h1>
 }
 
 export default Main
