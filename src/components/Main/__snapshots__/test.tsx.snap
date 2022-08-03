@@ -1,7 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Main /> should first 1`] = `
-<h1>
-  Boilerplate NextJS
-</h1>
+exports[`<Main/> should render Main without break 1`] = `
+<main
+  class="styles__Wrapper-sc-dzx1ao-0 seFDR"
+>
+  <img
+    alt="Imagem de um átomo com o texto React Avançado ao lado"
+    class="styles__Logo-sc-dzx1ao-1 bmXpbV"
+    src="/img/logo.svg"
+  />
+  <h1
+    class="styles__Title-sc-dzx1ao-2 cIwDMv"
+  >
+    React Avançado
+  </h1>
+  <h2
+    class="styles__Description-sc-dzx1ao-3 UsxhU"
+  >
+    Typescript, ReactJS, NextJS e Styled Components
+  </h2>
+  <img
+    alt="Um desenvolvedor sentado em uma cadeira de frente para um monitor"
+    class="styles__Illustration-sc-dzx1ao-4 hgYHjx"
+    src="/img/hero-illustration.svg"
+  />
+</main>
 `
