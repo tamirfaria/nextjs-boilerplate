@@ -1,18 +1,20 @@
 module.exports = {
-  'stories': [
-    '../src/**/*.stories.mdx',
-    '../src/**/*.stories.@(js|jsx|ts|tsx)',
-    '../src/components/**/stories.@(js|jsx|ts|tsx)',
+  "stories": [ "../src/components/**/stories.tsx" ],
+  "addons": [
+    "@storybook/addon-links",
+    "@storybook/addon-essentials",
+    "@storybook/addon-interactions",
+    "@storybook/addon-knobs"
   ],
-  'addons': [
-    '@storybook/addon-actions',
-    '@storybook/addon-knobs',
-    '@storybook/addon-links',
-    '@storybook/addon-essentials',
-    '@storybook/addon-interactions',
-  ],
-  'framework': '@storybook/react',
-  'core': {
-    'builder': '@storybook/builder-webpack5'
-  }
+  typescript: {
+    reactDocgen: 'react-docgen-typescript',
+    reactDocgenTypescriptOptions: {
+      compilerOptions: {
+        allowSyntheticDefaultImports: false,
+        esModuleInterop: false,
+      },
+    }
+  },
+  "framework": "@storybook/react",
+  "core": { "builder": "@storybook/builder-webpack5" }
 }
