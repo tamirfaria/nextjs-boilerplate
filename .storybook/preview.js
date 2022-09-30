@@ -1,4 +1,3 @@
-import { addDecorator } from '@storybook/react'
 import GlobalStyles from '../src/styles/global'
 
 export const parameters = {
@@ -11,9 +10,11 @@ export const parameters = {
   }
 }
 
-addDecorator((storyFn) => (
-  <>
-    <GlobalStyles />
-    {storyFn()}
-  </>
-))
+export const decorators = [
+  (Story) => (
+    <>
+      <GlobalStyles />
+      <Story />
+    </>
+  )
+]
