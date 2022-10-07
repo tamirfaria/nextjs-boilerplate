@@ -10,9 +10,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
       - name: Setup Node
@@ -40,4 +38,3 @@ jobs:
 
       - name: Build
         run: yarn build
-        
